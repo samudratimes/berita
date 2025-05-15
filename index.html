@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samudra Times</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f2f9fd;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #0077b6, #023e8a);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: #03045e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #90e0ef;
+    }
+
+    .hero {
+      background: url("https://source.unsplash.com/1600x600/?ocean,coastline") no-repeat center center/cover;
+      height: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2rem;
+      text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #023e8a;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .card p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .about {
+      margin-top: 4rem;
+      background-color: #e0f7ff;
+      padding: 2rem;
+      border-left: 5px solid #0077b6;
+      border-radius: 8px;
+    }
+
+    .about h2 {
+      color: #0077b6;
+      margin-top: 0;
+    }
+
+    .cta {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .cta h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: white;
+      color: #0077b6;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta a:hover {
+      background: #caf0f8;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samudra Times</h1>
+    <p>Menyelami Informasi Seputar Maritim, Lingkungan & Pesisir Indonesia</p>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Berita Laut</a>
+    <a href="#">Lingkungan</a>
+    <a href="#">Nelayan</a>
+    <a href="#">Ekowisata</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="hero">
+    Dari Pesisir ke Pusat Kota — Cerita Laut dari Samudra Indonesia
+  </div>
+
+  <main>
+    <h2 class="section-title">Berita Utama</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Krisis Ikan Laut: Apa Penyebabnya?</h3>
+        <p>Studi terbaru menunjukkan penurunan tajam populasi ikan di perairan timur Indonesia. Apa yang bisa dilakukan masyarakat dan pemerintah?</p>
+      </div>
+      <div class="card">
+        <h3>Festival Bahari Nusantara 2025</h3>
+        <p>Ribuan wisatawan hadir di perayaan tahunan yang digelar di Pulau Weh, Aceh. Ini bagian dari kampanye pelestarian budaya pesisir.</p>
+      </div>
+      <div class="card">
+        <h3>Potensi Energi Ombak di Selatan Jawa</h3>
+        <p>Para ilmuwan mengembangkan teknologi pembangkit listrik dari ombak laut sebagai solusi energi terbarukan berbasis lokal.</p>
+      </div>
+    </div>
+
+    <div class="about">
+      <h2>Tentang Samudra Times</h2>
+      <p><strong>Samudra Times</strong> adalah media independen yang fokus pada isu-isu kemaritiman, pesisir, lingkungan laut, dan masyarakat nelayan di Indonesia. Kami berkomitmen untuk menyuarakan kisah dan data dari wilayah perairan yang sering terabaikan dalam arus berita arus utama.</p>
+    </div>
+  </main>
+
+  <section class="cta">
+    <h2>Ingin Menjadi Kontributor?</h2>
+    <p>Kirimkan tulisan, opini, atau laporan lapangan Anda untuk dimuat di Samudra Times.</p>
+    <a href="#">Kirim Artikel</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Samudra Times | Semua hak dilindungi | Info: redaksi@samudratimes.id
+  </footer>
+
+</body>
+</html>
